@@ -1,0 +1,379 @@
+body {
+    color: #40514E;
+    margin: 0; /* (0) */
+    text-align: center; /* (1) center alignment centers everything in the body element that doesn't have a width set. */
+    font-family: 'Montserrat', sans-serif;
+    /*  font-family: Poppins, sans-serif; /* (2) add, e.g., verdana before if you want it to be verdana. Anything
+    added behind that are called 'fall backs', fonts to which the systems 'falls back on' if it can't render our chosen font. 
+    Yet, if you really want the user to see what font you've chosen, you can use font embedding: 
+    go to fonts.google.com, copy the link of the font family and paste it into your HTML script. */
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    line-height: 2; /* default is 1. */
+    margin: 50px auto 0 auto; 
+    /* Here, you can also use 'em', 'rem', and '%'. We use the 'round-clock' method,
+    as we want to get rid of the default spacing below the h1 title, yet keep it centered. */
+}
+
+h2 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; /* (3) */
+    font-weight: normal; /* now, we get rid of the default weight which, 
+    here, was 'bold' set by our browser. */
+    padding: 100px 0px;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.hr-first {
+    color: orange;
+    border-style: dotted;
+    border-top: 1px;
+    border-width: 8px;
+    width: 1.5%; /* important to use % so that it scales as website scales */
+}
+
+.hr-second {
+    color: orange;
+    border-style: dotted;
+    border-top: 1px;
+    border-width: 8px;
+    margin-top: 230px;
+    width: 1.5%;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.top-container {
+    background-image: linear-gradient(180deg, #EAFDFC, white); 
+    position: relative;
+    padding-top: 100px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.top-cloud {
+    opacity: 0.5;
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+
+.bottom-cloud {
+    opacity: 0.5;
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+}
+
+.mountain {
+    opacity: 0.5;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.middle-container {
+    margin: 0px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    margin-top: 200px;
+    width: 15%;
+}
+
+.intro {
+    line-height: 2;
+    margin: 10px auto 200px auto;
+    width: 30%;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.skills {
+    margin: 100px auto 0px auto;
+}
+
+.skill-row-webdevelopment {
+    line-height: 2;
+    margin: 100px auto; /* '100px auto 100px auto' is also possible */ 
+    margin-bottom: 200px;
+    text-align: left;
+    width: 45%;
+}
+
+.skill-row-dataintelligence {
+    line-height: 2;
+    margin: 100px auto; /* '100px auto 100px auto' is also possible */
+    margin-bottom: 200px;
+    text-align: left;
+    width: 45%;
+}
+
+.webdevelopment-img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    width: 25%;
+}
+
+.coding-img {
+    border-radius: 50%;
+    float: right;
+    margin-left: 30px;
+    width: 25%;
+}
+
+/* .skill-row img { like this, we can also select the 'img' element inside the (parent) skill-row class
+    width: 25%;
+} */
+
+/* if we, e.g., only want our skill title 'Web Development' to float next to the image and we want
+the text below it to be positioned below the image, we can use the property 'clear' (i.e., the anti-float).
+i.e., clear the chosen (e.g., left/right/top/bottom margin of the, in this case, webdevelopment skill description. */
+
+/*
+.webdevelopment-skill-description {
+    clear: left; 
+}
+
+.dataintelligence-skill-description {
+    clear: right; 
+} 
+*/
+
+/* TIP FROM ANGELA:
+use the 'floating' property only for its true purpsoe: wrapping text around an image.
+Don't abuse it for positioning, as this will get you into trouble later. 
+For positioning, use what we've learned: i.e., the position & display properties. */
+
+/*----------------------------------------------------------------------------*/
+
+.contact-me {
+    line-height: 2;
+    margin: 100px auto 80px auto;
+    width: 40%;
+}
+
+.contact-description {
+    margin: 50px auto;
+}
+
+.btn {
+    background-color: #66BFBF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px #666666;
+    color: #EAF6F6;
+    font-size: 1.2rem;
+    line-height: 10;
+    padding: 10px 20px;
+}
+
+.btn:hover {
+    background: #42d1bb;
+    text-decoration: none;
+  }
+
+/*----------------------------------------------------------------------------*/
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0px 20px 0px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    line-height: 4;
+}
+
+.footer-link {
+    line-height: 4;
+}
+
+.footer-link:hover {
+    color: #EAF6F6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  (0)
+    The 'border' adds extra space around your box 
+    The 'padding' adds extra space within your box before the border, i.e., to have some space between your text in the box and the border
+    The 'margin' adds a buffer zone around the element, i.e., to have some space between this specific element and another element
+    You can also see this visually in the Inspect > Chrome Developer Tools
+    And check out: https://hicks.design/journal/3d-css-box-model
+    You can also adjust the 'width' and the 'height' of your box (div), which, i.e., when making it larger, pushes away all content that is not inside that box */
+
+/*  (1) 
+    It only works with inline elements and elements that take up the whole width of the space (i.e., if width of the <h1> is set to 10%,
+    it won't be centered anymore). However, there is a way to solve this through horizontal centering (vertical centering also exists) - if you then, 
+    from the <h1> element remove the 'margin-top: 0;' and add 'margin: 0 auto 0 auto;', you are basically saying 0 margin at the top, auto margin at the right, 
+    0 margin at the bottom, auto margin at the left. Or, 'margin: 0 auto;', where 0 stands for top and bottom and auto stands for left and right. If you have 
+    3, they stand for 'top', 'left and right', 'bottom'.
+    Then, you will see that only if the (now) box element that takes up only 10% of the space is centered in the middle of the page. */
+
+/*  (2)
+    you will probably never use 'fantasy' or 'cursive'. 'Monospace' is often used for
+    writing lines of, e.g., code on your website. Font-families most likely used on websites
+    are sans-serif and serif. By default, sans-serif is 'Arial', and serif is 'Times New Roman'.
+    This can also be changed. */
+
+/*  (3)
+    100% = 16px. I.e., 90px = 562.5%. By using %, font size is dynamic and will scale with the website. 
+    Another way to insert a dynamic font size is by using a unit called 'em' (M) - the width of the letter M. 
+    When saying 'font-size: 1em', you used to be saying that you want the font-size to be 1 times the width 
+    of the letter M. This is no longer true. Now, 1em = 16px. I.e., 5.62em = 90px = 562.5%. 
+    You see different websites using different font-size units such as px, em, and %. Yet, important to know
+    is that when using 'em' or '%', that value is inherited. So, when specifying a font-size at 'h1', it is 
+    added on top of the font-size specified at its parent, i.e., the body. If the specified font-size at the 
+    body would, e.g., be '2em', and at the h1, e.g., be '5em', the actual font-size of h1 will become '7em'. 
+    This goes for 'em' and '%', but not for 'px'. So, this could be a bit 'dangerous' and lead to frustration
+    & debugging... to solve for this, we can use 'rem' (root em). This means 'ignore all of the parent settings
+    and use only this value instead, relative to the root (0)'. */
+
+/*  (4) CSS has certain 'Display' properties: 
+-   Block
+-   Inline
+-   Inline-Block
+-   None */
+
+/* Common Block Elements:
+-   Paragraphs (<p>)
+-   Headers (<h1> through <h6>)
+-   Divisions (<div>)
+-   Lists and list items (<ol>, <ul>, and <li>)
+-   Forms (<form>) */
+
+/* how can we target only part of a paragrah? */
+/* we use <span class="..." ... /span> which you can have nested inside
+an, e.g., <p> element, but you can also use them seperately per word. */
+/* the problem, however, is that you cannot change the width of a span /
+of an inline element, but you can change the width of a block element. 
+And you can add 'display: inline;' (but then you can't change the height/width)
+to block elements or add 'display: block;' to inline elements 
+(but then you can't let it exist next to another element on the same line).
+
+So, what to use when you want to adjust the width/height ánd let the element 
+exist next to another element? 
+--> use 'display: inline-block'. Then, you have the best of both worlds. */
+
+/* by adding 'display: none;' to an element, you make it look like you've never
+added this element to the code as it won't appear in the text.
+As such, you could hide text in, e.g., a quiz, but for this you can also
+add "visibility: hidden;", yet the position will still be visible. */
+
+/* We should understand that without CSS, your HTML elements already have pre-
+defined rules for how they should be displayed on your web page. And we have
+to understand how things get positioned by default before we can go on to change
+it, to bend it to our will, without getting confused and getting stuck. The rules:
+
+    1.  Content is Everything | inline elements only take up as much width/height as
+    the content. So if you have a span that contains a long word, it has a long width,
+    if you have a small word, it has a long width. And with block elements, even though
+    they take up 100% of the page width, the height is still determined by the content.
+
+    2. The Default Layout Order of the Elements on Screen comes form your HTML Code
+    3. Children sit on top of Parents | e.g.:
+            <div>
+                <h1>Children sit on top of <span>Par</span>ents</h1>
+            </div>
+        here, the <span> is the latest child (of <h1>), so it sits on top of <h1>, and
+        <h1> is the child of <div>, so it sits on top of <div>. */
+
+/* You can also set a CSS Position Property in order to position elements on screen
+the way you want it to instead of just going along with the default layout:
+
+    -   Static (all HTML elements are "static" in their position by default) | means 'just
+            follow the HTML default rules (HTML Flow)
+
+        See code pen:
+
+    -   Relative | how we want to position the element based on how it would have been
+            positioned if its position was static
+        -   Top
+        -   Bottom
+        -   Left
+        -   Right
+
+    Remember regarding relative positioning:
+    1. When you move an element that has a relative position (i.e., push it down by 50px),
+    it doesn't affect the position of anything else on the screen. It's as if the old position is 
+    kept and everything else flows around it, as if it was never moved. As if the element with the
+    relative position as left its ghost in order for all other elements to keep their own positions.
+    2. When we change the coordinate properties (i.e., make the top coordinate property for this 
+    relatively positioned image 50px)... what this really menas is that we're taking the top of where 
+    that image used to be and we're giving it a 50px margin from the top of our curren timage.
+
+    -   Absolute | with absolute positioning, we can also use 'top, bottom, left, and right', but when, e.g.,
+        entering 'right: 20px', the element actually moves to the right. This is because the element moves
+        relative to its parent (i.e., the div it's inside or the entire <body> of the webpage), 
+        so 20px to the left from the end (right) of the div. 
+
+    Often, you will find yourself using a combination of 'relative' and 'absolute' positioning.
+
+    You can also use a 'container' to fine-tune the elements on your screen, by putting your div inside
+    another div (the parent div), which you can classify as "container".
+
+    -   Fixed | with this, you can make an element stay fixed in its position. I.e., when scrolling down the page,
+        this element will stay in its position on the screen. This is handy for e.g., top bars or side bars. */
+
+
+
+
+
+
+
+
+
+
+
